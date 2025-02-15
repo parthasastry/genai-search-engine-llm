@@ -50,3 +50,4 @@ if prompt:=st.chat_input(placeholder="What is Machine Learning"):
         response=search_agent.run(st.session_state.messages, callbacks=[st_cb])
         st.session_state.messages.append({"role": "assistant", "content": response})
         st.write(response)
+
